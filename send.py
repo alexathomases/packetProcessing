@@ -58,8 +58,8 @@ def main():
 
     # Send a normal packet, per-packet load balancing
     elif sys.argv[3] == "o":
-        for size in [10, 106, 200]:
-        #for size in [10]:
+        #for size in [10, 106, 200]:
+        for size in [10]:
             payload = '\0x00' * size
             pkts = []
             for i in range(100):
